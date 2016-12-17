@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5B24DA2-255C-4B7B-B118-E400D91F52B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AQMSUC</RootNamespace>
+    <AssemblyName>AQMSUC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.UI, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.Wizard, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v16.1.Core, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v16.1.Win, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.1.Core, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AirItemDocment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AirItemDocment.Designer.cs">
+      <DependentUpon>AirItemDocment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAQI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeAQI.Designer.cs">
+      <DependentUpon>HomeAQI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeChart.Designer.cs">
+      <DependentUpon>HomeChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeInfo.Designer.cs">
+      <DependentUpon>HomeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemParams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemParams.Designer.cs">
+      <DependentUpon>ItemParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsDocmentManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemsDocmentManager.Designer.cs">
+      <DependentUpon>ItemsDocmentManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SysSetUC1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SysSetUC1.Designer.cs">
+      <DependentUpon>SysSetUC1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysSetUC2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SysSetUC2.Designer.cs">
+      <DependentUpon>SysSetUC2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysSetUC3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SysSetUC3.Designer.cs">
+      <DependentUpon>SysSetUC3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysSetUC4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SysSetUC4.Designer.cs">
+      <DependentUpon>SysSetUC4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindDocment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WindDocment.Designer.cs">
+      <DependentUpon>WindDocment.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AQMSBLL\AQMSBLL.csproj">
+      <Project>{94ecd8f5-d03c-4cb8-bf06-42fff6155b02}</Project>
+      <Name>AQMSBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AQMSModel\AQMSModel.csproj">
+      <Project>{2cd50bc7-e8eb-44b5-810a-46e0b4ab913e}</Project>
+      <Name>AQMSModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AirItemDocment.resx">
+      <DependentUpon>AirItemDocment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeAQI.resx">
+      <DependentUpon>HomeAQI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeChart.resx">
+      <DependentUpon>HomeChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeInfo.resx">
+      <DependentUpon>HomeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemParams.resx">
+      <DependentUpon>ItemParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsDocmentManager.resx">
+      <DependentUpon>ItemsDocmentManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysSetUC1.resx">
+      <DependentUpon>SysSetUC1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysSetUC2.resx">
+      <DependentUpon>SysSetUC2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysSetUC3.resx">
+      <DependentUpon>SysSetUC3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysSetUC4.resx">
+      <DependentUpon>SysSetUC4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindDocment.resx">
+      <DependentUpon>WindDocment.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

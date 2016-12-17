@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3F31455-4610-4281-ABDE-B26DB3048CF2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AQMSUI</RootNamespace>
+    <AssemblyName>AQMSUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\AirQuality.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v16.1.UI, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v16.1.Wizard, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v16.1.Core, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v16.1.Win, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v16.1.Core, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v16.1, Version=16.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AQIReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AQIReport.Designer.cs">
+      <DependentUpon>AQIReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstRun1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstRun1.Designer.cs">
+      <DependentUpon>FirstRun1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstRun2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstRun2.Designer.cs">
+      <DependentUpon>FirstRun2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstRun3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstRun3.Designer.cs">
+      <DependentUpon>FirstRun3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadForm.Designer.cs">
+      <DependentUpon>LoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlReport.Designer.cs">
+      <DependentUpon>ControlReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlStatues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlStatues.Designer.cs">
+      <DependentUpon>ControlStatues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataReport.Designer.cs">
+      <DependentUpon>DataReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeviceSetting.Designer.cs">
+      <DependentUpon>DeviceSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeMenu.Designer.cs">
+      <DependentUpon>HomeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocalControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocalControl.Designer.cs">
+      <DependentUpon>LocalControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoreSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoreSetting.Designer.cs">
+      <DependentUpon>MoreSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NetSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetSetting.Designer.cs">
+      <DependentUpon>NetSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewDevice.Designer.cs">
+      <DependentUpon>NewDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatuesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatuesReport.Designer.cs">
+      <DependentUpon>StatuesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysSetting.Designer.cs">
+      <DependentUpon>SysSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimerControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimerControl.Designer.cs">
+      <DependentUpon>TimerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDocmentManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDocmentManager.Designer.cs">
+      <DependentUpon>UCDocmentManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLogin.Designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AQIReport.resx">
+      <DependentUpon>AQIReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstRun1.resx">
+      <DependentUpon>FirstRun1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstRun2.resx">
+      <DependentUpon>FirstRun2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstRun3.resx">
+      <DependentUpon>FirstRun3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadForm.resx">
+      <DependentUpon>LoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlReport.resx">
+      <DependentUpon>ControlReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlStatues.resx">
+      <DependentUpon>ControlStatues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataReport.resx">
+      <DependentUpon>DataReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceSetting.resx">
+      <DependentUpon>DeviceSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeMenu.resx">
+      <DependentUpon>HomeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalControl.resx">
+      <DependentUpon>LocalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoreSetting.resx">
+      <DependentUpon>MoreSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetSetting.resx">
+      <DependentUpon>NetSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewDevice.resx">
+      <DependentUpon>NewDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StatuesReport.resx">
+      <DependentUpon>StatuesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysSetting.resx">
+      <DependentUpon>SysSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimerControl.resx">
+      <DependentUpon>TimerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDocmentManager.resx">
+      <DependentUpon>UCDocmentManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AQMSBLL\AQMSBLL.csproj">
+      <Project>{94ecd8f5-d03c-4cb8-bf06-42fff6155b02}</Project>
+      <Name>AQMSBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AQMSModel\AQMSModel.csproj">
+      <Project>{2cd50bc7-e8eb-44b5-810a-46e0b4ab913e}</Project>
+      <Name>AQMSModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AQMSUC\AQMSUC.csproj">
+      <Project>{b5b24da2-255c-4b7b-b118-e400d91f52b2}</Project>
+      <Name>AQMSUC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirQuality.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\debug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infore1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infore2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min_withe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\news_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirQuality.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirQuality_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

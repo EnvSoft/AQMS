@@ -1,2 +1,2 @@
 # AQMS
-Air Quality Monitoring System
+Automatic air Quality Monitoring System
